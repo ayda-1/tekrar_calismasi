@@ -9,6 +9,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: TasarimTekrar(),
+    );
+  }
+}
+
+class TasarimTekrar extends StatelessWidget {
+  const TasarimTekrar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        foregroundColor: Colors.white,
+        title: Text("data"),
+      ),
+    );
   }
 }
